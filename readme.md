@@ -13,7 +13,7 @@ Master ------> Worker0
 ```
 
 Master and WorkerX are just cluster's nodes. Each node prints cluster state each 1 minute.
-Master send some DebugEvent to cluster nodes via some balancer.
+The Master sends some DebugEvent to cluster nodes via some balancer.
 
 Requirements
 -----------------------------
