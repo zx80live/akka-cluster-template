@@ -18,6 +18,7 @@ The Master sends some DebugEvent to cluster nodes via some balancer.
 Requirements
 -----------------------------
 - Scala: 2.11.8
+- Akka: 2.5.9
 - JRE:   8
 
 Local testing
