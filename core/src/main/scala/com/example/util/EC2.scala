@@ -12,7 +12,7 @@ import org.slf4j.{Logger, LoggerFactory}
 import scala.collection.JavaConversions._
 
 /**
- * This solution was borrowed from `https://github.com/chrisloy/akka-ec2`
+ * This solution was borrowed from https://github.com/chrisloy/akka-ec2/blob/master/src/main/scala/net/chrisloy/akka/EC2.scala
  */
 class EC2(scaling: AmazonAutoScalingClient, ec2: AmazonEC2Client) {
 
