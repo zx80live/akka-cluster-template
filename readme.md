@@ -1,4 +1,4 @@
-Akka cluster example for local and EC2 testing
+Akka cluster template for local and EC2 testing
 ==============================================================
 Version 1.0
 
