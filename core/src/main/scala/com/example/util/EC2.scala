@@ -11,6 +11,9 @@ import org.slf4j.{Logger, LoggerFactory}
 
 import scala.collection.JavaConversions._
 
+/**
+ * This solution was borrowed from `https://github.com/chrisloy/akka-ec2`
+ */
 class EC2(scaling: AmazonAutoScalingClient, ec2: AmazonEC2Client) {
 
   val logger: Logger = LoggerFactory.getLogger(getClass)
