@@ -58,9 +58,12 @@ EC2 testing
 aws.cluster.staticConfig = false
 ```
 
-**2**) Deploy to EC2/dockers
+**2**) The following ports should be allowed: `2551`, `3000`, `5000`. Also a port biding is used in this mode automatically (at `EC2Utils`). 
+See https://doc.akka.io/docs/akka/snapshot/remoting.html?language=scala#akka-behind-nat-or-in-a-docker-container
 
-**3**) See logs
+**3**) Deploy to EC2/dockers
+
+**4**) See logs
 
 
 Useful links
