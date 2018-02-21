@@ -69,6 +69,10 @@ https://github.com/chrisloy/akka-ec2
 
 https://medium.com/@ukayani/deploying-clustered-akka-applications-on-amazon-ecs-fbcca762a44c
 
+https://github.com/hseeberger/constructr
+       
+https://github.com/typesafehub/constructr-zookeeper
+
 Issues
 -----------------------------
 http://grokbase.com/t/gg/akka-user/153s1neq95/2-3-9-cluster-unstable-on-ec2
