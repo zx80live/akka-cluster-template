@@ -63,14 +63,18 @@ aws.cluster.staticConfig = false
 **3**) See logs
 
 
-Useful links:
+Useful links
 -----------------------------
 https://github.com/chrisloy/akka-ec2
+
 https://medium.com/@ukayani/deploying-clustered-akka-applications-on-amazon-ecs-fbcca762a44c
 
-Issues:
+Issues
 -----------------------------
 http://grokbase.com/t/gg/akka-user/153s1neq95/2-3-9-cluster-unstable-on-ec2
+
 https://github.com/akka/akka/issues/18474
+
 https://github.com/akka/akka/issues/23754
+
 https://stackoverflow.com/questions/48628656/running-an-akka-cluster-with-ec2-and-docker-nodes-arent-registered-in-akka-clu
