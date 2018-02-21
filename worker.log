@@ -1,0 +1,133 @@
+19:41:46.726 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.EC2Utils$ | isStaticConfig = true
+19:41:46.756 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ | using config without binds
+19:41:46.758 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ | [34m---[ClusterConfig]-------------[0m
+19:41:46.767 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ | current=NodeConfig(192.168.10.202,3000,,)
+19:41:46.768 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ | name=ClusterSystem
+19:41:46.769 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ | NodeConfig(192.168.10.202,2551,,)
+19:41:46.770 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ | NodeConfig(192.168.10.202,5000,,)
+19:41:46.770 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ | NodeConfig(192.168.10.202,3000,,)
+19:41:46.771 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ | roles=List(worker)
+19:41:46.771 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ | seeds:
+19:41:46.772 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ |  akka.tcp://ClusterSystem@192.168.10.202:2551
+19:41:46.773 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ |  akka.tcp://ClusterSystem@192.168.10.202:5000
+19:41:46.773 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ |  akka.tcp://ClusterSystem@192.168.10.202:3000
+19:41:46.773 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ | [34m-------------------------------[0m
+19:41:46.773 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ | [32m---[ActorSystemConfig]-------------[0m
+19:41:46.775 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ | akka.remote.netty.tcp.hostname=Success(192.168.10.202)
+19:41:46.776 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ | akka.remote.netty.tcp.port=Success(3000)
+19:41:46.777 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ | akka.cluster.roles=Success([worker])
+19:41:46.778 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ | akka.remote.netty.tcp.bind-hostname=Success()
+19:41:46.780 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ | akka.remote.netty.tcp.bind-port=Success()
+19:41:46.780 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ | akka.cluster.seed-nodes=
+19:41:46.781 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ |  akka.tcp://ClusterSystem@192.168.10.202:2551
+19:41:46.781 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ |  akka.tcp://ClusterSystem@192.168.10.202:5000
+19:41:46.781 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ |  akka.tcp://ClusterSystem@192.168.10.202:3000
+19:41:46.781 | [worker] | [pool-12-thread-7] | INFO  | com.example.util.ClusterUtils$ | [32m-----------------------------------[0m
+19:41:47.418 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-5] | INFO  | akka.event.slf4j.Slf4jLogger | Slf4jLogger started
+19:41:47.681 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-5] | INFO  | akka.remote.Remoting | Starting remoting
+19:41:48.435 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-5] | INFO  | akka.remote.Remoting | Remoting started; listening on addresses :[akka.tcp://ClusterSystem@192.168.10.202:3000]
+19:41:48.467 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-5] | INFO  | a.c.Cluster(akka://ClusterSystem) | Cluster Node [akka.tcp://ClusterSystem@192.168.10.202:3000] - Starting up...
+19:41:48.634 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-5] | INFO  | a.c.Cluster(akka://ClusterSystem) | Cluster Node [akka.tcp://ClusterSystem@192.168.10.202:3000] - Registered cluster JMX MBean [akka:type=Cluster,port=3000]
+19:41:48.634 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-5] | INFO  | a.c.Cluster(akka://ClusterSystem) | Cluster Node [akka.tcp://ClusterSystem@192.168.10.202:3000] - Started up successfully
+19:41:48.693 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-4] | INFO  | com.example.WorkerActor | [34m[preStart] subscribing cluster events...[0m
+19:41:48.708 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-3] | INFO  | a.c.Cluster(akka://ClusterSystem) | Cluster Node [akka.tcp://ClusterSystem@192.168.10.202:3000] - Metrics collection has started successfully
+19:41:48.734 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-7] | INFO  | com.example.WorkerActor | [31munknown event: CurrentClusterState(TreeSet(), Set(), Set(), None, Map())[0m
+19:41:48.866 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-21] | WARN  | a.r.transport.netty.NettyTransport | Remote connection to [null] failed with java.net.ConnectException: Connection refused: /192.168.10.202:5000
+19:41:48.886 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-21] | WARN  | a.remote.ReliableDeliverySupervisor | Association with remote system [akka.tcp://ClusterSystem@192.168.10.202:5000] has failed, address is now gated for [5000] ms. Reason: [Association failed with [akka.tcp://ClusterSystem@192.168.10.202:5000]] Caused by: [Connection refused: /192.168.10.202:5000]
+19:41:48.904 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-21] | INFO  | a.r.RemoteActorRefProvider$RemoteDeadLetterActorRef | Message [akka.cluster.InternalClusterAction$InitJoin$] from Actor[akka://ClusterSystem/system/cluster/core/daemon/joinSeedNodeProcess-1#-268145923] to Actor[akka://ClusterSystem/deadLetters] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+19:41:49.282 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-6] | INFO  | a.c.Cluster(akka://ClusterSystem) | Cluster Node [akka.tcp://ClusterSystem@192.168.10.202:3000] - Welcome from [akka.tcp://ClusterSystem@192.168.10.202:2551]
+19:41:49.305 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-19] | INFO  | com.example.WorkerActor | [44mRegister member Member(address = akka.tcp://ClusterSystem@192.168.10.202:2551, status = Up)[0m
+19:41:49.306 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-19] | INFO  | com.example.WorkerActor | [44m[M][0m[34mMemberJoined(Member(address = akka.tcp://ClusterSystem@192.168.10.202:3000, status = Joining))[0m
+19:41:49.701 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-5] | INFO  | com.example.WorkerActor | [42mSELF[0m[44mRegister member Member(address = akka.tcp://ClusterSystem@192.168.10.202:3000, status = Up)[0m
+19:41:49.701 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-5] | INFO  | com.example.WorkerActor | [34m[registerOnMemberUp] ...[0m
+19:42:29.570 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-21] | INFO  | com.example.WorkerActor | [32mhandle: DebugEvent-1519231259541[0m
+19:42:33.689 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-3] | INFO  | com.example.WorkerActor | [34m[42mClusterStatus for [self: com.example.WorkerActor@675f0262]:[0m[0m
+19:42:33.690 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-3] | INFO  | com.example.WorkerActor | [32mMember(address = akka.tcp://ClusterSystem@192.168.10.202:2551, status = Up)[0m
+19:42:33.690 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-3] | INFO  | com.example.WorkerActor | [32mMember(address = akka.tcp://ClusterSystem@192.168.10.202:3000, status = Up)[0m
+19:42:37.234 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-21] | INFO  | a.c.Cluster(akka://ClusterSystem) | Cluster Node [akka.tcp://ClusterSystem@192.168.10.202:3000] - Marked address [akka.tcp://ClusterSystem@192.168.10.202:3000] as [Leaving]
+19:42:37.236 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-4] | INFO  | com.example.WorkerActor | [44m[M][0m[34mMemberLeft(Member(address = akka.tcp://ClusterSystem@192.168.10.202:3000, status = Leaving))[0m
+19:42:37.561 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-4] | INFO  | a.c.Cluster(akka://ClusterSystem) | Cluster Node [akka.tcp://ClusterSystem@192.168.10.202:3000] - Exiting, starting coordinated shutdown
+19:42:37.562 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-20] | INFO  | com.example.WorkerActor | [44m[M][0m[34mMemberExited(Member(address = akka.tcp://ClusterSystem@192.168.10.202:3000, status = Exiting))[0m
+19:42:37.563 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-17] | INFO  | a.c.Cluster(akka://ClusterSystem) | Cluster Node [akka.tcp://ClusterSystem@192.168.10.202:3000] - Exiting completed
+19:42:37.573 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-5] | INFO  | a.c.Cluster(akka://ClusterSystem) | Cluster Node [akka.tcp://ClusterSystem@192.168.10.202:3000] - Shutting down...
+19:42:37.577 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-17] | INFO  | com.example.WorkerActor | [34m[registerOnMemberRemoved] ...[0m
+19:42:37.582 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-2] | INFO  | a.c.Cluster(akka://ClusterSystem) | Cluster Node [akka.tcp://ClusterSystem@192.168.10.202:3000] - Successfully shut down
+19:42:37.583 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-3] | INFO  | com.example.WorkerActor | [31m[44mMember removed Member(address = akka.tcp://ClusterSystem@192.168.10.202:2551, status = Removed) after Up[0m[0m
+19:42:37.584 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-3] | INFO  | com.example.WorkerActor | [31m[44mMember removed Member(address = akka.tcp://ClusterSystem@192.168.10.202:3000, status = Removed) after Exiting[0m[0m
+19:42:37.587 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-21] | INFO  | com.example.WorkerActor | [34m[postStop] cancel selfStatus Success(true)[0m
+19:42:37.587 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-21] | INFO  | com.example.WorkerActor | [34m[postStop] unsubscribing cluster events...[0m
+19:42:37.596 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-17] | INFO  | a.r.RemoteActorRefProvider$RemotingTerminator | Shutting down remote daemon.
+19:42:37.599 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-17] | INFO  | a.r.RemoteActorRefProvider$RemotingTerminator | Remote daemon shut down; proceeding with flushing remote transports.
+19:42:37.609 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-17] | INFO  | akka.actor.EmptyLocalActorRef | Message [akka.cluster.ClusterHeartbeatSender$Heartbeat] from Actor[akka.tcp://ClusterSystem@192.168.10.202:2551/system/cluster/core/daemon/heartbeatSender#1602157844] to Actor[akka://ClusterSystem/system/cluster/heartbeatReceiver] was not delivered. [2] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+19:42:37.661 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-5] | INFO  | a.r.RemoteActorRefProvider$RemotingTerminator | Remoting shut down.
+20:04:33.418 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.EC2Utils$ | isStaticConfig = true
+20:04:33.462 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ | using config without binds
+20:04:33.464 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ | [34m---[ClusterConfig]-------------[0m
+20:04:33.473 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ | current=NodeConfig(192.168.10.202,3000,,)
+20:04:33.474 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ | name=ClusterSystem
+20:04:33.475 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ | NodeConfig(192.168.10.202,2551,,)
+20:04:33.475 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ | NodeConfig(192.168.10.202,5000,,)
+20:04:33.476 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ | NodeConfig(192.168.10.202,3000,,)
+20:04:33.476 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ | roles=List(worker)
+20:04:33.476 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ | seeds:
+20:04:33.477 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ |  akka.tcp://ClusterSystem@192.168.10.202:2551
+20:04:33.478 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ |  akka.tcp://ClusterSystem@192.168.10.202:5000
+20:04:33.478 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ |  akka.tcp://ClusterSystem@192.168.10.202:3000
+20:04:33.478 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ | [34m-------------------------------[0m
+20:04:33.478 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ | [32m---[ActorSystemConfig]-------------[0m
+20:04:33.479 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ | akka.remote.netty.tcp.hostname=Success(192.168.10.202)
+20:04:33.481 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ | akka.remote.netty.tcp.port=Success(3000)
+20:04:33.482 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ | akka.cluster.roles=Success([worker])
+20:04:33.483 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ | akka.remote.netty.tcp.bind-hostname=Success()
+20:04:33.484 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ | akka.remote.netty.tcp.bind-port=Success()
+20:04:33.485 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ | akka.cluster.seed-nodes=
+20:04:33.486 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ |  akka.tcp://ClusterSystem@192.168.10.202:2551
+20:04:33.486 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ |  akka.tcp://ClusterSystem@192.168.10.202:5000
+20:04:33.487 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ |  akka.tcp://ClusterSystem@192.168.10.202:3000
+20:04:33.487 | [worker] | [pool-12-thread-3] | INFO  | com.example.util.ClusterUtils$ | [32m-----------------------------------[0m
+20:04:34.258 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-3] | INFO  | akka.event.slf4j.Slf4jLogger | Slf4jLogger started
+20:04:34.511 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-3] | INFO  | akka.remote.Remoting | Starting remoting
+20:04:35.093 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-3] | INFO  | akka.remote.Remoting | Remoting started; listening on addresses :[akka.tcp://ClusterSystem@192.168.10.202:3000]
+20:04:35.119 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-3] | INFO  | a.c.Cluster(akka://ClusterSystem) | Cluster Node [akka.tcp://ClusterSystem@192.168.10.202:3000] - Starting up...
+20:04:35.264 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-5] | INFO  | a.c.Cluster(akka://ClusterSystem) | Cluster Node [akka.tcp://ClusterSystem@192.168.10.202:3000] - Registered cluster JMX MBean [akka:type=Cluster,port=3000]
+20:04:35.264 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-5] | INFO  | a.c.Cluster(akka://ClusterSystem) | Cluster Node [akka.tcp://ClusterSystem@192.168.10.202:3000] - Started up successfully
+20:04:35.316 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-15] | INFO  | com.example.WorkerActor | [34m[preStart] subscribing cluster events...[0m
+20:04:35.328 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-4] | INFO  | a.c.Cluster(akka://ClusterSystem) | Cluster Node [akka.tcp://ClusterSystem@192.168.10.202:3000] - Metrics collection has started successfully
+20:04:35.343 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-15] | INFO  | com.example.WorkerActor | [31munknown event: CurrentClusterState(TreeSet(), Set(), Set(), None, Map())[0m
+20:04:35.519 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-3] | WARN  | a.r.transport.netty.NettyTransport | Remote connection to [null] failed with java.net.ConnectException: Connection refused: /192.168.10.202:5000
+20:04:35.530 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-3] | WARN  | a.remote.ReliableDeliverySupervisor | Association with remote system [akka.tcp://ClusterSystem@192.168.10.202:5000] has failed, address is now gated for [5000] ms. Reason: [Association failed with [akka.tcp://ClusterSystem@192.168.10.202:5000]] Caused by: [Connection refused: /192.168.10.202:5000]
+20:04:35.539 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-21] | INFO  | a.r.RemoteActorRefProvider$RemoteDeadLetterActorRef | Message [akka.cluster.InternalClusterAction$InitJoin$] from Actor[akka://ClusterSystem/system/cluster/core/daemon/joinSeedNodeProcess-1#-77635155] to Actor[akka://ClusterSystem/deadLetters] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+20:04:35.863 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-21] | INFO  | a.c.Cluster(akka://ClusterSystem) | Cluster Node [akka.tcp://ClusterSystem@192.168.10.202:3000] - Welcome from [akka.tcp://ClusterSystem@192.168.10.202:2551]
+20:04:35.871 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-20] | INFO  | com.example.WorkerActor | [44mRegister member Member(address = akka.tcp://ClusterSystem@192.168.10.202:2551, status = Up)[0m
+20:04:35.881 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-20] | INFO  | com.example.WorkerActor | [44m[M][0m[34mMemberJoined(Member(address = akka.tcp://ClusterSystem@192.168.10.202:3000, status = Joining))[0m
+20:04:36.024 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-3] | INFO  | com.example.WorkerActor | [42mSELF[0m[44mRegister member Member(address = akka.tcp://ClusterSystem@192.168.10.202:3000, status = Up)[0m
+20:04:36.025 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-3] | INFO  | com.example.WorkerActor | [34m[registerOnMemberUp] ...[0m
+20:05:18.896 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-20] | INFO  | com.example.WorkerActor | [32mhandle: DebugEvent-1519232628867[0m
+20:05:20.329 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-20] | INFO  | com.example.WorkerActor | [34m[42mClusterStatus for [self: com.example.WorkerActor@24066fc]:[0m[0m
+20:05:20.331 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-20] | INFO  | com.example.WorkerActor | [32mMember(address = akka.tcp://ClusterSystem@192.168.10.202:2551, status = Up)[0m
+20:05:20.331 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-20] | INFO  | com.example.WorkerActor | [32mMember(address = akka.tcp://ClusterSystem@192.168.10.202:3000, status = Up)[0m
+20:06:03.884 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-17] | INFO  | com.example.WorkerActor | [32mhandle: DebugEvent-1519232628867[0m
+20:06:05.329 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-20] | INFO  | com.example.WorkerActor | [34m[42mClusterStatus for [self: com.example.WorkerActor@24066fc]:[0m[0m
+20:06:05.329 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-20] | INFO  | com.example.WorkerActor | [32mMember(address = akka.tcp://ClusterSystem@192.168.10.202:2551, status = Up)[0m
+20:06:05.330 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-20] | INFO  | com.example.WorkerActor | [32mMember(address = akka.tcp://ClusterSystem@192.168.10.202:3000, status = Up)[0m
+20:06:48.882 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-20] | INFO  | com.example.WorkerActor | [32mhandle: DebugEvent-1519232628867[0m
+20:06:50.329 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-21] | INFO  | com.example.WorkerActor | [34m[42mClusterStatus for [self: com.example.WorkerActor@24066fc]:[0m[0m
+20:06:50.330 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-21] | INFO  | com.example.WorkerActor | [32mMember(address = akka.tcp://ClusterSystem@192.168.10.202:2551, status = Up)[0m
+20:06:50.330 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-21] | INFO  | com.example.WorkerActor | [32mMember(address = akka.tcp://ClusterSystem@192.168.10.202:3000, status = Up)[0m
+20:07:13.259 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-21] | INFO  | a.c.Cluster(akka://ClusterSystem) | Cluster Node [akka.tcp://ClusterSystem@192.168.10.202:3000] - Marked address [akka.tcp://ClusterSystem@192.168.10.202:3000] as [Leaving]
+20:07:13.260 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-21] | INFO  | com.example.WorkerActor | [44m[M][0m[34mMemberLeft(Member(address = akka.tcp://ClusterSystem@192.168.10.202:3000, status = Leaving))[0m
+20:07:14.050 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-16] | INFO  | a.c.Cluster(akka://ClusterSystem) | Cluster Node [akka.tcp://ClusterSystem@192.168.10.202:3000] - Exiting, starting coordinated shutdown
+20:07:14.052 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-16] | INFO  | com.example.WorkerActor | [44m[M][0m[34mMemberLeft(Member(address = akka.tcp://ClusterSystem@192.168.10.202:2551, status = Leaving))[0m
+20:07:14.052 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-16] | INFO  | com.example.WorkerActor | [44m[M][0m[34mMemberExited(Member(address = akka.tcp://ClusterSystem@192.168.10.202:3000, status = Exiting))[0m
+20:07:14.077 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-16] | INFO  | a.c.Cluster(akka://ClusterSystem) | Cluster Node [akka.tcp://ClusterSystem@192.168.10.202:3000] - Exiting completed
+20:07:14.088 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-16] | INFO  | a.c.Cluster(akka://ClusterSystem) | Cluster Node [akka.tcp://ClusterSystem@192.168.10.202:3000] - Shutting down...
+20:07:14.089 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-16] | INFO  | com.example.WorkerActor | [34m[registerOnMemberRemoved] ...[0m
+20:07:14.089 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-16] | INFO  | a.c.Cluster(akka://ClusterSystem) | Cluster Node [akka.tcp://ClusterSystem@192.168.10.202:3000] - Successfully shut down
+20:07:14.090 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-16] | INFO  | com.example.WorkerActor | [31m[44mMember removed Member(address = akka.tcp://ClusterSystem@192.168.10.202:2551, status = Removed) after Leaving[0m[0m
+20:07:14.090 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-16] | INFO  | com.example.WorkerActor | [31m[44mMember removed Member(address = akka.tcp://ClusterSystem@192.168.10.202:3000, status = Removed) after Exiting[0m[0m
+20:07:14.097 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-5] | INFO  | com.example.WorkerActor | [34m[postStop] cancel selfStatus Success(true)[0m
+20:07:14.097 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-5] | INFO  | com.example.WorkerActor | [34m[postStop] unsubscribing cluster events...[0m
+20:07:14.105 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-3] | INFO  | a.r.RemoteActorRefProvider$RemotingTerminator | Shutting down remote daemon.
+20:07:14.109 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-3] | INFO  | a.r.RemoteActorRefProvider$RemotingTerminator | Remote daemon shut down; proceeding with flushing remote transports.
+20:07:14.140 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-3] | INFO  | akka.actor.LocalActorRef | Message [akka.remote.EndpointWriter$AckIdleCheckTimer$] from Actor[akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40192.168.10.202%3A2551-0/endpointWriter#1080925500] to Actor[akka://ClusterSystem/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FClusterSystem%40192.168.10.202%3A2551-0/endpointWriter#1080925500] was not delivered. [2] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+20:07:14.168 | [worker] | [ClusterSystem-akka.actor.default-dispatcher-5] | INFO  | a.r.RemoteActorRefProvider$RemotingTerminator | Remoting shut down.
