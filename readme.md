@@ -53,7 +53,7 @@ See below screenshot and comments for the local testing:
 
 EC2 testing
 -----------------------------
-**1**) Set dynamic mode in core/main/resources/application.conf:
+**1**) Set dynamic mode at `core/main/resources/application.conf`:
 ```
 aws.cluster.staticConfig = false
 ```
