@@ -5,14 +5,14 @@ Version 1.0
 Description
 -----------------------------
 ```
-Master ------> Node0
-           --> Node1
+Master ------> Worker0
+           --> Worker1
             ...
-           --> NodeN
+           --> WorkerN
 
 ```
 
-Master and NodeX are just cluster's nodes. Each node print cluster state each 1 minute.
+Master and WorkerX are just cluster's nodes. Each node print cluster state each 1 minute.
 Master send some DebugEvent to the cluster nodes via some balancer.
 
 Requirements
