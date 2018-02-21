@@ -59,7 +59,8 @@ aws.cluster.staticConfig = false
 ```
 
 **2**) The following ports should be allowed: `2551`, `3000`, `5000`. Also a port biding is used in this mode automatically (at [com.example.util.EC2Utils](https://github.com/zx80live/akka-cluster-template/blob/master/core/src/main/scala/com/example/util/EC2Utils.scala#L67)). 
-See https://doc.akka.io/docs/akka/snapshot/remoting.html?language=scala#akka-behind-nat-or-in-a-docker-container
+
+See [Akka behind NAT or in a Docker container](https://doc.akka.io/docs/akka/snapshot/remoting.html?language=scala#akka-behind-nat-or-in-a-docker-container)
 
 **3**) Deploy to EC2/dockers
 
