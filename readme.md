@@ -87,3 +87,5 @@ https://github.com/akka/akka/issues/18474
 https://github.com/akka/akka/issues/23754
 
 https://stackoverflow.com/questions/48628656/running-an-akka-cluster-with-ec2-and-docker-nodes-arent-registered-in-akka-clu
+
+https://stackoverflow.com/questions/48924863/akka-cluster-holds-and-keeps-storing-wrong-info-about-membership-on-ec2-docker
